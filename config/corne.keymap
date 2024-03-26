@@ -49,7 +49,7 @@
         };
 
         combo_rshift {
-            bindings = <&kp RIGHT_SHIFT>;
+            bindings = <&sl 1>;
             key-positions = <33 34>;
         };
 

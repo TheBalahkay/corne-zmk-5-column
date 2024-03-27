@@ -26,10 +26,10 @@
 
         base {
             bindings = <
-&none  &kp Q         &kp W  &kp E                 &kp R      &kp T             &kp Y              &kp U  &kp I         &kp O                   &kp P          &none
-&none  &kp A         &kp S  &kp D                 &kp F      &kp G             &kp H              &kp J  &kp K         &kp L                   &kp SEMICOLON  &none
-&none  &kp CAPSLOCK  &kp Z  &kp X                 &kp C      &kp V             &kp B              &kp N  &kp M         &mt PERIOD EXCLAMATION  &kp SLASH      &none
-                            &kp LS(LC(LEFT_ALT))  &kp SPACE  &sk LEFT_SHIFT    &kp RIGHT_CONTROL  &to 1  &kp LEFT_GUI
+&none  &kp Q      &kp W  &kp E                 &kp R      &kp T             &kp Y              &kp U  &kp I         &kp O      &kp P          &none
+&none  &kp A      &kp S  &kp D                 &kp F      &kp G             &kp H              &kp J  &kp K         &kp L      &kp SEMICOLON  &none
+&none  &kp COMMA  &kp Z  &kp X                 &kp C      &kp V             &kp B              &kp N  &kp M         &kp SLASH  &kp PERIOD     &none
+                         &kp LS(LC(LEFT_ALT))  &kp SPACE  &sk LEFT_SHIFT    &kp RIGHT_CONTROL  &to 1  &kp LEFT_GUI
             >;
         };
 

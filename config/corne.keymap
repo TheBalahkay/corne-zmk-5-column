@@ -20,11 +20,6 @@
     combos {
         compatible = "zmk,combos";
 
-        enter {
-            bindings = <&kp ENTER>;
-            key-positions = <33 34>;
-        };
-
         escape {
             bindings = <&kp ESCAPE>;
             key-positions = <1 2>;
@@ -33,6 +28,11 @@
         backspace {
             bindings = <&kp BACKSPACE>;
             key-positions = <9 10>;
+        };
+
+        tab {
+            bindings = <&kp TAB>;
+            key-positions = <25 38>;
         };
     };
 
@@ -52,19 +52,19 @@
 
         sym {
             bindings = <
-&trans  &kp EXCLAMATION  &kp AT_SIGN  &kp POUND  &kp DOLLAR  &kp PERCENT        &kp CARET         &kp AMPERSAND         &kp LEFT_PARENTHESIS   &kp RIGHT_PARENTHESIS  &kp ASTERISK   &trans
-&trans  &kp TAB          &kp EQUAL    &kp GRAVE  &trans      &trans             &kp BACKSLASH     &kp LEFT_BRACE        &kp LEFT_BRACKET       &kp RIGHT_BRACKET      &kp SQT        &trans
-&trans  &kp LEFT_SHIFT   &kp MINUS    &kp COMMA  &kp PERIOD  &kp EXCLAMATION    &kp LEFT_BRACKET  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACKET      &kp BACKSPACE  &trans
-                                      &trans     &trans      &trans             &trans            &trans                &trans
+&trans  &kp EXCLAMATION  &kp AT_SIGN  &kp POUND  &kp DOLLAR  &kp PERCENT       &kp CARET        &kp AMPERSAND  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp ASTERISK   &trans
+&trans  &kp GRAVE        &kp EQUAL    &kp MINUS  &kp SLASH   &kp LEFT_BRACE    &kp RIGHT_BRACE  &kp BACKSLASH  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp SQT        &trans
+&trans  &kp LEFT_SHIFT   &trans       &trans     &trans      &trans            &trans           &trans         &kp COMMA             &kp PERIOD             &kp RIGHT_ALT  &trans
+                                      &trans     &trans      &trans            &trans           &trans         &trans
             >;
         };
 
         num {
             bindings = <
-&none   &kp ESCAPE  &kp C_PLAY_PAUSE  &kp C_PREVIOUS        &kp C_NEXT            &kp UNDERSCORE    &kp MINUS      &kp N7        &kp N8        &kp N9        &to 3          &trans
-&none   &kp TAB     &trans            &kp C_VOL_DN          &kp C_VOL_UP          &kp PLUS          &kp EQUAL      &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp ENTER      &trans
-&trans  &trans      &kp ASTERISK      &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &kp PERIOD        &kp N0         &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp BACKSPACE  &trans
-                                      &trans                &to 0                 &kp LCMD          &kp RIGHT_ALT  &to 1         &trans
+&none   &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3          &kp NUMBER_4          &kp N5               &kp NUMBER_6  &kp N7        &kp N8        &kp N9        &kp N0         &trans
+&none   &trans        &kp K_PREV    &kp C_PLAY_PAUSE      &kp C_NEXT            &kp C_VOLUME_UP      &kp LEFT      &kp DOWN      &kp UP_ARROW  &kp RIGHT     &kp ENTER      &trans
+&trans  &trans        &kp ASTERISK  &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &kp C_VOLUME_DOWN    &kp N0        &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &sk RIGHT_ALT  &trans
+                                    &trans                &trans                &trans               &trans        &trans        &trans
             >;
         };
 

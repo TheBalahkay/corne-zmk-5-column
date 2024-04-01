@@ -61,10 +61,10 @@
 
         num {
             bindings = <
-&none   &kp ESCAPE  &kp N7  &kp N8  &kp N9        &kp PLUS     &kp NUMBER_6   &kp C_PREVIOUS  &kp C_PLAY         &kp C_NEXT       &kp BACKSPACE  &trans
-&none   &kp N0      &kp N4  &kp N5  &kp NUMBER_6  &kp MINUS    &kp LEFT       &kp DOWN        &kp UP_ARROW       &kp RIGHT        &kp ENTER      &trans
-&trans  &trans      &kp N1  &kp N2  &kp N3        &kp EQUAL    &sk RIGHT_ALT  &kp C_MUTE      &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp ENTER      &trans
-                            &trans  &trans        &trans       &trans         &trans          &trans
+&none   &kp ESCAPE  &kp N7  &kp N8  &kp N9        &kp PLUS     &kp C_BRIGHTNESS_INC  &kp C_PREVIOUS  &kp C_PLAY         &kp C_NEXT       &kp BACKSPACE  &trans
+&none   &kp N0      &kp N4  &kp N5  &kp NUMBER_6  &kp MINUS    &kp LEFT              &kp DOWN        &kp UP_ARROW       &kp RIGHT        &kp ENTER      &trans
+&trans  &trans      &kp N1  &kp N2  &kp N3        &kp EQUAL    &kp C_BRI_DEC         &kp C_MUTE      &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp RIGHT_ALT  &trans
+                            &trans  &trans        &trans       &trans                &trans          &trans
             >;
         };
 

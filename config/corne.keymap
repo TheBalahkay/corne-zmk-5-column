@@ -42,7 +42,7 @@
 
         altBackspace {
             bindings = <&kp LA(BACKSPACE)>;
-            key-positions = <39 23>;
+            key-positions = <39 22>;
         };
     };
 

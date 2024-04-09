@@ -47,7 +47,7 @@
 
         workman {
             bindings = <&tog 3>;
-            key-positions = <37 40>;
+            key-positions = <38 39>;
         };
     };
 
@@ -77,10 +77,10 @@
 
         sym {
             bindings = <
-&trans  &kp ESCAPE  &kp AT_SIGN  &kp POUND          &kp DOLLAR  &kp PERCENT    &kp CARET         &kp AMPERSAND         &kp BACKSLASH          &kp PIPE           &kp BACKSPACE  &trans
-&trans  &kp TAB     &kp EQUAL    &kp MINUS          &kp PLUS    &none          &kp LEFT_BRACKET  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp RIGHT_BRACKET  &kp ENTER      &trans
-&trans  &kp GRAVE   &kp SQT      &kp DOUBLE_QUOTES  &none       &none          &none             &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp ASTERISK       &to 3          &trans
-                                 &trans             &trans      &to 0          &to 2             &trans                &trans
+&trans  &kp ESCAPE  &kp AT_SIGN  &kp POUND          &kp DOLLAR  &kp PERCENT      &kp CARET         &kp AMPERSAND         &kp BACKSLASH          &kp PIPE           &kp BACKSPACE  &trans
+&trans  &kp TAB     &kp EQUAL    &kp MINUS          &kp PLUS    &kp SEMICOLON    &kp LEFT_BRACKET  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp RIGHT_BRACKET  &kp ENTER      &trans
+&trans  &kp GRAVE   &kp SQT      &kp DOUBLE_QUOTES  &none       &none            &none             &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp ASTERISK       &to 3          &trans
+                                 &trans             &trans      &to 0            &to 2             &trans                &trans
             >;
         };
 

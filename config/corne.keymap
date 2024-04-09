@@ -45,9 +45,9 @@
             key-positions = <39 22>;
         };
 
-        workman {
-            bindings = <&tog 3>;
-            key-positions = <37 40>;
+        meh {
+            bindings = <&sk LS(LC(LEFT_ALT))>;
+            key-positions = <38 39>;
         };
     };
 

@@ -98,7 +98,7 @@
 &none  &trans  &mwh SCROLL_LEFT  &mmv MOVE_UP    &mwh SCROLL_RIGHT  &none     &kp LG(LBKT)  &kp LC(LS(TAB))  &kp RC(TAB)  &kp LG(RBKT)  &trans     &none
 &none  &none   &mmv MOVE_LEFT    &mmv MOVE_DOWN  &mmv MOVE_RIGHT    &none     &kp LEFT      &kp DOWN         &kp UP       &kp RIGHT     &to 1      &none
 &none  &none   &none             &mwh SCROLL_UP  &mwh SCROLL_DOWN   &trans    &mkp RCLK     &mkp LCLK        &kp PG_DN    &kp PG_UP     &kp ENTER  &none
-                                 &trans          &trans &trans             &to 1 &trans &trans 
+                                 &trans          &trans             &trans    &to 1         &trans           &trans 
             >;
         };
 

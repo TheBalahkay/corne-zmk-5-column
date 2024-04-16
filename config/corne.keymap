@@ -82,9 +82,9 @@
 
         coleman-dh {
             bindings = <
-&trans  &kp Q  &kp W  &kp F     &kp P           &kp B        &kp J  &kp L             &kp U            &kp Y                   &kp SEMI  &trans
-&trans  &kp A  &kp R  &kp S     &kp T           &kp G        &kp M  &kp N             &kp E            &kp I                   &kp O     &trans
-&trans  &kp Z  &kp X  &kp C     &kp D           &kp V        &kp K  &kp H             &mt MINUS COMMA  &mt EXCLAMATION PERIOD  &kp FSLH  &trans
+&trans  &kp Q  &kp W  &kp F     &kp P           &kp B        &kp J  &kp L             &kp U            &kp Y                   &kp BACKSPACE  &trans
+&trans  &kp A  &kp R  &kp S     &kp T           &kp G        &kp M  &kp N             &kp E            &kp I                   &kp O          &trans
+&trans  &kp Z  &kp X  &kp C     &kp D           &kp V        &kp K  &kp H             &mt MINUS COMMA  &mt EXCLAMATION PERIOD  &kp ENTER      &trans
                       &sk LALT  &kp LEFT_SHIFT  &kp SPACE    &to 1  &kp LEFT_CONTROL  &sk LGUI
             >;
         };
@@ -93,7 +93,7 @@
             bindings = <
 &trans  &kp ESCAPE             &kp AMPERSAND    &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp MINUS    &mt LEFT_BRACE LEFT_BRACKET  &kp LEFT_PARENTHESIS   &kp RIGHT_PARENTHESIS  &mt RIGHT_BRACE RIGHT_BRACKET  &kp BACKSPACE  &trans
 &trans  &kp TAB                &kp DOLLAR       &kp PERCENT   &kp CARET             &kp PLUS     &mt TILDE GRAVE              &mt DOUBLE_QUOTES SQT  &mt QUESTION SLASH     &mt PIPE BACKSLASH             &to 3          &trans
-&trans  &kp RIGHT_PARENTHESIS  &kp EXCLAMATION  &kp AT_SIGN   &kp HASH              &kp EQUAL    &vim_quit                    &vim_save              &vim_wq                &none                          &kp ENTER      &trans
+&trans  &kp RIGHT_PARENTHESIS  &kp EXCLAMATION  &kp AT_SIGN   &kp HASH              &kp EQUAL    &trans                       &kp SEMICOLON          &trans                 &none                          &kp ENTER      &trans
                                                 &trans        &trans                &to 0        &to 2                        &trans                 &trans
             >;
         };

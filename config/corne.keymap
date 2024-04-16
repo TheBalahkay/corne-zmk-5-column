@@ -92,8 +92,8 @@
         sym {
             bindings = <
 &trans  &kp ESCAPE             &kp AMPERSAND    &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp MINUS    &mt LEFT_BRACE LEFT_BRACKET  &kp LEFT_PARENTHESIS   &kp RIGHT_PARENTHESIS  &mt RIGHT_BRACE RIGHT_BRACKET  &kp BACKSPACE  &trans
-&trans  &kp TAB                &kp DOLLAR       &kp PERCENT   &kp CARET             &kp PLUS     &vim_quit                    &vim_save              &vim_wq                &none                          &to 3          &trans
-&trans  &kp RIGHT_PARENTHESIS  &kp EXCLAMATION  &kp AT_SIGN   &kp HASH              &kp EQUAL    &mt TILDE GRAVE              &mt DOUBLE_QUOTES SQT  &mt QUESTION SLASH     &mt PIPE BACKSLASH             &kp ENTER      &trans
+&trans  &kp TAB                &kp DOLLAR       &kp PERCENT   &kp CARET             &kp PLUS     &mt TILDE GRAVE              &mt DOUBLE_QUOTES SQT  &mt QUESTION SLASH     &mt PIPE BACKSLASH             &to 3          &trans
+&trans  &kp RIGHT_PARENTHESIS  &kp EXCLAMATION  &kp AT_SIGN   &kp HASH              &kp EQUAL    &vim_quit                    &vim_save              &vim_wq                &none                          &kp ENTER      &trans
                                                 &trans        &trans                &to 0        &to 2                        &trans                 &trans
             >;
         };

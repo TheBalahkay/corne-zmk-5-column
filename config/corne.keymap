@@ -54,12 +54,26 @@
     conditional_layers { compatible = "zmk,conditional-layers"; };
 
     macros {
-        test: test {
+        vim_save: test {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp COLON &kp W &kp RET>;
             label = "TEST";
             tap-ms = <0>;
+        };
+
+        vim_quit: vim_quit {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&none &kp COLON &kp Q &kp RET>;
+            label = "VIM_QUIT";
+        };
+
+        vim_wq: vim_wq {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&none &kp COLON &kp W &kp Q &kp RET>;
+            label = "VIM_WQ";
         };
     };
 
@@ -86,10 +100,10 @@
 
         num {
             bindings = <
-&none   &kp ESCAPE    &kp N7  &kp N8  &kp N9        &kp PLUS     &kp LG(LBKT)          &kp LC(LS(TAB)) &kp RC(TAB)        &kp LG(RBKT)     &trans         &none
-&none   &kp N0        &kp N4  &kp N5  &kp NUMBER_6  &kp MINUS    &kp LEFT              &kp DOWN        &kp UP_ARROW       &kp RIGHT        &to 3          &none
-&trans  &kp LEFT_ALT  &kp N1  &kp N2  &kp N3        &kp EQUAL    &kp C_BRI_DEC         &kp PG_DN       &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp ENTER      &none
-                              &trans  &trans        &to 0        &trans                &trans          &trans
+&none   &kp ESCAPE  &kp N7  &kp N8  &kp N9        &kp PLUS     &kp LG(LBKT)   &kp LC(LS(TAB))  &kp RC(TAB)        &kp LG(RBKT)     &trans  &none
+&none   &kp TAB     &kp N4  &kp N5  &kp NUMBER_6  &kp MINUS    &kp LEFT       &kp DOWN         &kp UP_ARROW       &kp RIGHT        &to 3   &none
+&trans  &kp N0      &kp N1  &kp N2  &kp N3        &kp EQUAL    &kp C_BRI_DEC  &kp PG_DN        &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &trans  &none
+                            &trans  &trans        &to 0        &trans         &trans           &trans
             >;
         };
 

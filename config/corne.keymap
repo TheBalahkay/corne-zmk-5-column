@@ -49,33 +49,14 @@
             bindings = <&sk LS(LC(LEFT_ALT))>;
             key-positions = <38 39>;
         };
+
+        qwerty {
+            bindings = <&tog 4>;
+            key-positions = <37 40 13 22>;
+        };
     };
 
     conditional_layers { compatible = "zmk,conditional-layers"; };
-
-    macros {
-        vim_save: test {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp COLON &kp W &kp RET>;
-            label = "TEST";
-            tap-ms = <0>;
-        };
-
-        vim_quit: vim_quit {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&none &kp COLON &kp Q &kp RET>;
-            label = "VIM_QUIT";
-        };
-
-        vim_wq: vim_wq {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&none &kp COLON &kp W &kp Q &kp RET>;
-            label = "VIM_WQ";
-        };
-    };
 
     keymap {
         compatible = "zmk,keymap";
@@ -118,10 +99,10 @@
 
         base {
             bindings = <
-&none  &kp Q  &kp W  &kp E   &kp R   &kp T    &kp Y  &kp U   &kp I            &kp O                   &kp BACKSPACE  &none
-&none  &kp A  &kp S  &kp D   &kp F   &kp G    &kp H  &kp J   &kp K            &kp L                   &to 2          &none
-&none  &kp Z  &kp X  &kp C   &kp V   &kp B    &kp N  &kp M   &mt MINUS COMMA  &mt EXCLAMATION PERIOD  &kp ENTER      &none
-                     &trans  &trans  &to 0    &to 1  &trans  &trans
+&none  &kp Q  &kp W  &kp E         &kp R  &kp T        &kp Y             &kp U  &kp I             &kp O                   &kp P          &none
+&none  &kp A  &kp S  &kp D         &kp F  &kp G        &kp H             &kp J  &kp K             &kp L                   &kp BACKSPACE  &none
+&none  &kp Z  &kp X  &kp C         &kp V  &kp B        &kp N             &kp M  &mt MINUS COMMA   &mt EXCLAMATION PERIOD  &kp ENTER      &none
+                     &sk LEFT_ALT  &mo 1  &kp SPACE    &kp LEFT_CONTROL  &mo 2  &kp LEFT_COMMAND
             >;
         };
 
